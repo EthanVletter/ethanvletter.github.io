@@ -5,6 +5,10 @@
         <title>Home Page</title>
 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     </head>
 
     <body>
@@ -13,16 +17,56 @@
         <nav>
             <div id="nav-name">Ethan Vletter</div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Info</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactinfo">Contact Info</a></li>
             </ul>
         </nav>
 
-        <div id="introduction-block">
-            <div id="image-block"></div>
-            <div id="introduction-message"></div>
+        <!-- -------------------------------- Home --------------------------------- -->
+
+        <div id="home" class="catalogue">
+            <img id="home-image" class="catalogue-image" src="images/HomeCatalogue.jpg" alt="Home image" />
+            <div class="catalogue-text">HOME</div>
         </div>
+
+        <div id="introduction-block">
+            <div id="image-block">
+                <!-- <img id="profile-photo" src="images/profilephoto.jpg" alt="Profile photo" /> -->
+                <img id="profile-photo" src="images/Ethan1.jpg" alt="Profile photo" />
+            </div>
+            <div id="introduction-message">
+                <p id="introduction-paragraph">Welcome to my Online Portfolio</p>
+                <!-- <img src="images/profilephoto.jpg" alt="Profile photo" /> -->
+            </div>
+        </div>
+
+        <!-- ------------------------------ About Me ------------------------------- -->
+
+        <div id="aboutme" class="catalogue">
+            <img id="aboutme-image" class="catalogue-image" src="images/AboutMeCatalogue.jpg" alt="About Me image" />
+            <div class="catalogue-text">ABOUT ME</div>
+        </div>
+
+        <div id="aboutme-block">About Me</div>
+
+        <!-- ------------------------------ Projects ------------------------------- -->
+
+        <div id="projects" class="catalogue">
+            <img id="projects-image" class="catalogue-image" src="images/ProjectsCatalogue.jpg" alt="Projects image" />
+            <div class="catalogue-text">PROJECTS</div>
+        </div>
+
+        <div id="projects-block">Projects</div>
+
+        <!-- ---------------------------- Contact Info ----------------------------- -->
+
+        <div id="contactinfo" class="catalogue">
+            <img id="contactinfo-image" class="catalogue-image" src="images/ContactInfoCatalogue.jpg" alt="Contact Info image" />
+            <div class="catalogue-text">CONTACT INFO</div>
+        </div>
+
+        <div id="contactinfo-block">Contact Info</div>
     </body>
 </html>
