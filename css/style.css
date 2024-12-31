@@ -116,7 +116,8 @@ nav li a:hover {
     align-items: center;
 
     margin-top: 20px;
-    width: 1300px;
+    /* width: 1300px; */
+    width: 80%;
     height: 200px;
 
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -164,19 +165,23 @@ nav li a:hover {
 }
 
 #home-image {
-    object-position: 0px -220px;
+    /* object-position: 0px -220px; */
 }
 
 #aboutme-image {
-    object-position: 0px -880px;
+    /* object-position: 0px -880px; */
 }
 
 #projects-image {
-    object-position: 0px -1000px;
+    /* object-position: 0px -1000px; */
 }
 
 #contactinfo-image {
-    object-position: 0px -1000px;
+    /* object-position: 0px -1000px; */
+}
+
+.block {
+    margin: 20px;
 }
 
 #introduction-block {
@@ -190,7 +195,7 @@ nav li a:hover {
     align-items: center;
 
     /* padding: 20px; */
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 #image-block {
@@ -202,8 +207,8 @@ nav li a:hover {
     /* margin: 100px; */
     /* margin-right: 200px; */
     /* margin-left: 150px; */
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     padding: 20px;
 }
 
@@ -250,4 +255,64 @@ nav li a:hover {
 
     /* width: 100%;
     height: 100%; */
+}
+
+#contactinfo-block {
+    /* border-color: #333333;
+    border-width: 1px;
+    border-style: solid; */
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+}
+
+#contactinfo-block a {
+    text-decoration: none;
+}
+
+.logo-block {
+    border-color: #2d2d2d;
+    background-color: #2d2d2d;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+
+    margin: 20px;
+    padding: 20px;
+    /* margin: auto; */
+    width: 160px;
+    height: 160px;
+
+    text-decoration: none;
+}
+
+.logo {
+    border-color: #2d2d2d;
+    border-width: 1px;
+    border-style: solid;
+
+    width: 50px;
+    height: 50px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: inline-block;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoheading {
+    color: white;
+    text-decoration: none;
 }
