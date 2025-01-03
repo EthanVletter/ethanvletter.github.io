@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -48,6 +49,9 @@
             </div>
         </div>
 
+        <div class="block">Experience</div>
+        <div></div>
+
         <!-- ------------------------------ About Me ------------------------------- -->
 
         <div id="aboutme" class="catalogue" onclick="aboutmeToggle()">
@@ -73,53 +77,83 @@
             <div class="catalogue-text">CONTACT INFO</div>
         </div>
 
+        <!-- github -->
         <div id="contactinfo-block" class="block">
             <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
                 <a href="https://github.com/EthanVletter" target="_blank">
-                    <p class="logoheading">GitHub</p>
-                    <img id="github-logo" class="logo" src="images/logos/github.png" alt="github image" />
-                    <p>GitHub</p>
+                    <div class="logo-block-inner">
+                        <p class="logoheading">GitHub</p>
+                        <img id="github-logo" class="logo" src="images/logos/github.png" alt="github image" />
+                        <p class="logoheading">EthanVletter</p>
+                    </div>
                 </a>
             </div>
 
+            <!-- linkedin -->
             <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
                 <a href="https://www.linkedin.com/in/ethan-vletter/" target="_blank">
-                    <p class="logoheading">Linkedin</p>
-                    <img id="linkedin-logo" class="logo" src="images/logos/linkedin.png" alt="linkedin image" />
-                    <p class="logoheading">Linkedin</p>
+                    <div class="logo-block-inner">
+                        <p class="logoheading">Linkedin</p>
+                        <img id="linkedin-logo" class="logo" src="images/logos/linkedin.png" alt="linkedin image" />
+                        <p class="logoheading">ethan-vletter</p>
+                    </div>
                 </a>
             </div>
 
+            <!-- phone -->
             <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
                 <a href="tel:+27614040283" target="_blank">
-                    <p class="logoheading">GitHub</p>
-                    <img id="whatsapp-logo" class="logo" src="images/logos/whatsapp.png" alt="whatsapp image" />
-                    <p class="logoheading">GitHub</p>
+                    <div class="logo-block-inner">
+                        <p class="logoheading">Phone number</p>
+                        <img id="whatsapp-logo" class="logo" src="images/logos/whatsapp.png" alt="whatsapp image" />
+                        <p class="logoheading">+27614040283</p>
+                    </div>
                 </a>
             </div>
 
+            <!-- instagram -->
             <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
                 <a href="https://www.instagram.com/ethan.vletter/" target="_blank">
-                    <p class="logoheading">GitHub</p>
-                    <img id="instagram-logo" class="logo" src="images/logos/instagram.png" alt="instagram image" />
-                    <p class="logoheading">GitHub</p>
+                    <div class="logo-block-inner">
+                        <p class="logoheading">Instagram</p>
+                        <img id="instagram-logo" class="logo" src="images/logos/instagram.png" alt="instagram image" />
+                        <p class="logoheading">ethan.vletter</p>
+                    </div>
                 </a>
             </div>
 
+            <!-- discord -->
             <div class="logo-block">
                 <!-- <a href="https://discord.gg/LTSanic#7244" target="_blank"> -->
-                <a href="https://discord.com/channels/@me/522053705839804416/" target="_blank">
-                    <p class="logoheading">GitHub</p>
+                <!-- <a href="#"> -->
+                <span class="tooltip">Copied to clipboard!</span>
+
+                <div class="logo-block-inner" onclick="copyDiscord()">
+                    <!-- <span class="tooltip">Copied to clipboard!</span> -->
+                    <p class="logoheading">Discord</p>
                     <img id="discord-logo" class="logo" src="images/logos/discord.png" alt="discord image" />
-                    <p class="logoheading">GitHub</p>
-                </a>
+                    <p class="logoheading">LTSanic#7244</p>
+                </div>
+                <!-- </a> -->
             </div>
 
+            <!-- mail -->
             <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
                 <a href="mailto:ethan.vletter@gmail.com" target="_blank">
-                    <p class="logoheading">GitHub</p>
-                    <img id="google-logo" class="logo" src="images/logos/google.png" alt="google image" />
-                    <p class="logoheading">GitHub</p>
+                    <div class="logo-block-inner">
+                        <p class="logoheading">Mail</p>
+                        <img id="google-logo" class="logo" src="images/logos/google.png" alt="google image" />
+                        <p class="logoheading">ethan.vletter@gmail.com</p>
+                    </div>
                 </a>
             </div>
         </div>
