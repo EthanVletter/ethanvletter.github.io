@@ -1,5 +1,5 @@
 function homeToggle() {
-    var x = document.getElementById("introduction-block");
+    var x = document.getElementById("home-block");
 
     if (x.style.display === "none") {
         x.style.display = "flex";

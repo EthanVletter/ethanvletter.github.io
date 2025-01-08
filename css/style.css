@@ -183,14 +183,23 @@ nav li a:hover {
 
 .block {
     margin: 20px;
+
+    border-color: #3ca141;
+    border-width: 2px;
+    border-style: solid;
 }
 
-#introduction-block {
+#home-block {
     /* border-color: #683535;
     border-width: 1px;
     border-style: solid; */
 
+    /* display: inline; */
+    /* display: flex; */
+    /* margin: auto; */
+    /* flex-wrap: wrap; */
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -200,9 +209,9 @@ nav li a:hover {
 }
 
 #image-block {
-    /* border-color: #333333;
+    border-color: #333333;
     border-width: 1px;
-    border-style: solid; */
+    border-style: solid;
 
     /* padding: 350px; */
     /* margin: 100px; */
@@ -259,9 +268,9 @@ nav li a:hover {
 }
 
 #contactinfo-block {
-    border-color: #333333;
+    /* border-color: #333333;
     border-width: 1px;
-    border-style: solid;
+    border-style: solid; */
 
     display: flex;
     flex-wrap: wrap;
@@ -271,7 +280,7 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
 
-    /* padding: 20px; */
+    padding: 20px;
 
     width: 60%;
 }
