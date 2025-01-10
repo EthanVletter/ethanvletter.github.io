@@ -5,13 +5,13 @@
         <title>Home Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/experimental.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
 
-        <script type="text/javascript" src="/js/index.js"></script>
+        <script type="text/javascript" src="../js/experimental.js"></script>
     </head>
 
     <body>
@@ -29,12 +29,14 @@
 
         <!-- -------------------------------- Home --------------------------------- -->
 
-        <div id="home" class="catalogue" onclick="homeToggle()">
-            <img id="home-image" class="catalogue-image" src="images/HomeCatalogue.jpg" alt="Home image" />
+        <!-- <div id="home" class="catalogue" onclick="homeToggle()">
+            <img id="home-image" class="catalogue-image" src="../images/HomeCatalogue.jpg" alt="Home image" />
             <div class="catalogue-text">HOME</div>
-        </div>
+        </div> -->
 
-        <!-- <div id="csstest"></div> -->
+        <div id="home" class="card" onclick="homeToggle()">
+            <p class="card-text">HOME</p>
+        </div>
 
         <div id="home-block" class="block">
             <div id="introduction-message">
@@ -50,9 +52,13 @@
 
         <!-- ------------------------------ About Me ------------------------------- -->
 
-        <div id="aboutme" class="catalogue" onclick="aboutmeToggle()">
-            <img id="aboutme-image" class="catalogue-image" src="images/AboutMeCatalogue.jpg" alt="About Me image" />
+        <!-- <div id="aboutme" class="catalogue" onclick="aboutmeToggle()">
+            <img id="aboutme-image" class="catalogue-image" src="../images/AboutMeCatalogue.jpg" alt="About Me image" />
             <div class="catalogue-text">ABOUT ME</div>
+        </div> -->
+
+        <div id="aboutme" class="card" onclick="aboutmeToggle()">
+            <p class="card-text">ABOUT ME</p>
         </div>
 
         <div id="aboutme-block" class="block">
@@ -60,28 +66,36 @@
 
             <div id="image-block">
                 <!-- <img id="profile-photo" src="images/profilephoto.jpg" alt="Profile photo" /> -->
-                <img id="profile-photo" src="images/Ethan1.jpg" alt="Profile photo" />
+                <img id="profile-photo" src="../images/Ethan1.jpg" alt="Profile photo" />
             </div>
         </div>
 
         <!-- ------------------------------ Projects ------------------------------- -->
 
-        <div id="projects" class="catalogue" onclick="projectsToggle()">
-            <img id="projects-image" class="catalogue-image" src="images/ProjectsCatalogue.jpg" alt="Projects image" />
+        <!-- <div id="projects" class="catalogue" onclick="projectsToggle()">
+            <img id="projects-image" class="catalogue-image" src="../images/ProjectsCatalogue.jpg" alt="Projects image" />
             <div class="catalogue-text">PROJECTS</div>
+        </div> -->
+
+        <div id="projects" class="card" onclick="projectsToggle()">
+            <p class="card-text">PROJECTS</p>
         </div>
 
         <div id="projects-block" class="block">
             Projects
 
-            <a href="/html/experimental.html">Experimental</a>
+            <a href="../index.html">Live-version</a>
         </div>
 
         <!-- ---------------------------- Contact Info ----------------------------- -->
 
-        <div id="contactinfo" class="catalogue" onclick="contactinfoToggle()">
-            <img id="contactinfo-image" class="catalogue-image" src="images/ContactInfoCatalogue.jpg" alt="Contact Info image" />
+        <!-- <div id="contactinfo" class="catalogue" onclick="contactinfoToggle()">
+            <img id="contactinfo-image" class="catalogue-image" src="../images/ContactInfoCatalogue.jpg" alt="Contact Info image" />
             <div class="catalogue-text">CONTACT INFO</div>
+        </div> -->
+
+        <div id="contactinfo" class="card" onclick="contactinfoToggle()">
+            <p class="card-text">CONTACT INFO</p>
         </div>
 
         <!-- github -->
@@ -92,7 +106,7 @@
                 <a href="https://github.com/EthanVletter" target="_blank">
                     <div class="logo-block-inner">
                         <p class="logoheading">GitHub</p>
-                        <img id="github-logo" class="logo" src="images/logos/github.png" alt="github image" />
+                        <img id="github-logo" class="logo" src="../images/logos/github.png" alt="github image" />
                         <p class="logoheading">EthanVletter</p>
                     </div>
                 </a>
@@ -105,7 +119,7 @@
                 <a href="https://www.linkedin.com/in/ethan-vletter/" target="_blank">
                     <div class="logo-block-inner">
                         <p class="logoheading">Linkedin</p>
-                        <img id="linkedin-logo" class="logo" src="images/logos/linkedin.png" alt="linkedin image" />
+                        <img id="linkedin-logo" class="logo" src="../images/logos/linkedin.png" alt="linkedin image" />
                         <p class="logoheading">ethan-vletter</p>
                     </div>
                 </a>
@@ -154,7 +168,7 @@
                 <a href="mailto:ethan.vletter@gmail.com" target="_blank">
                     <div class="logo-block-inner">
                         <p class="logoheading">Mail</p>
-                        <img id="google-logo" class="logo" src="images/logos/google.png" alt="google image" />
+                        <img id="google-logo" class="logo" src="../images/logos/google.png" alt="google image" />
                         <p class="logoheading">ethan.vletter@gmail.com</p>
                     </div>
                 </a>
