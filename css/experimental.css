@@ -2,6 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
+/* primary color - #0b0c15 */
+/* secondary color - #1c1f2c */
+
 body {
     /* background: #080808; */
 
@@ -71,12 +74,12 @@ body {
     transform: scale(1.2);
 } */
 
-#header {
-    font-size: 20px;
-}
-
 .card-text {
     font-size: 30px;
+}
+
+#header {
+    font-size: 20px;
 }
 
 nav {
@@ -437,4 +440,57 @@ nav li a:hover {
     border-width: 1px;
     border-style: solid;
     transform: translateY(-30px);
+}
+
+.cardtest {
+    /* background-color: #0b0c15; */
+    background-color: #0b0c15;
+    /* width: 500px; */
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    /* padding: 2em; */
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    /* display: inline-block; */
+    /* overflow: hidden; */
+    /* z-index: 0; */
+    /* transition: transform 0.3s ease; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardtest::after,
+.cardtest::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-image: conic-gradient(rgba(2, 2, 161, 0.8), rgba(32, 129, 255, 0.8), rgba(2, 2, 161, 0.8)); */
+    /* background-image: conic-gradient(transparent 25%, blue, transparent, blue); */
+    /* background-image: linear-gradient(to bottom right, blue 0%, rgba(0, 0, 255, 0) 40%, rgba(0, 0, 255, 0) 80%, blue 100%); */
+    background-image: linear-gradient(to bottom right, #1c1f2c 0%, rgba(0, 0, 255, 0) 40%, rgba(0, 0, 255, 0) 80%, #1c1f2c 100%);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cardtest::before {
+    filter: blur(1.5em);
+    opacity: 0.2;
+}
+
+.cardtest:hover {
+    cursor: pointer;
+}
+
+.card-texttest {
+    font-size: 30px;
 }
