@@ -3,16 +3,59 @@ html {
 }
 
 :root {
+    /* Dark Theme */
     --primary-color: #0b0c15;
     --secondary-color: #1c1f2c;
     --primary-font-color: #ffffff;
     --secondary-font-color: #505050;
+    --accent-blue: #3a5eff;
+    --accent-purple: #9b59b6;
+    --neutral-gray-light: #aab2c8;
+    --neutral-gray-dark: #6e768c;
+    --highlight-green: #66ff99;
+    --highlight-red: #ff6f61;
+
+    /* Light Theme */
+    --light-background: #f7f9fc;
+    --light-secondary-background: #eaf1ff;
+    --light-accent-blue: #87a6ff;
+    --light-accent-purple: #d1a8ff;
+    --text-dark: #1c1f2c;
+    --border-light: #d3dcec;
 }
 
 body {
     background-color: var(--primary-color);
-    font-family: Roboto, sans-serif;
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+
     color: var(--primary-font-color);
+    padding-top: 250px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid var(--highlight-green); */
+    background-color: white;
+    background-color: var(--light-background);
+    background-color: var(--light-accent-blue);
+    display: block;
+    position: relative;
+}
+
+footer {
+    height: 100px;
+    border: 1px solid var(--highlight-green);
 }
 
 .card {
@@ -72,12 +115,13 @@ nav {
     font-weight: 600;
     display: flex;
     justify-content: space-between;
-    padding-left: 120px;
-    padding-right: 120px;
-    position: sticky;
+    /* padding-left: 120px; */
+    /* padding-right: 120px; */
+    position: fixed;
     top: 0;
     z-index: 1000;
     height: 80px;
+    width: 100%;
 }
 
 nav ul {
@@ -88,6 +132,9 @@ nav ul {
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 nav li {
@@ -114,8 +161,8 @@ nav li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .horizontal-line {
@@ -321,6 +368,8 @@ nav li a:hover {
     /* color: linear-gradient(135deg, #4463ec 0%, #3e61ff 9%, #0000 10%, rgba(0, 0, 255, 0) 89%, #4063ff 90%, #4769ff 100%); */
     /* background-image: linear-gradient(red, blue); */
     background-image: linear-gradient(135deg, #00b7ff 0%, #0b37ff 50%, #00d9ff 100%);
+    background-image: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 50%, var(--accent-blue) 100%);
+    background-image: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-blue) 50%, var(--accent-purple) 100%);
     color: transparent;
     background-clip: text;
 }
@@ -407,7 +456,8 @@ nav li a:hover {
     width: 40%;
     /* background-image: linear-gradient(135deg, #3a5eff 0%, #5473ff 19%, #00000000 20%, #00000000 80%, #5473ff 81%, #3a5eff 100%); */
     /* background-image: linear-gradient(135deg, #00000000 0%, #3a5eff 100%); */
-    background: #3a5eff;
+    /* background: #3a5eff; */
+    background: var(--accent-blue);
     /* background-image: linear-gradient(225deg, rgb(0, 110, 255) 0%, blue 39%, #00000000 40%, #00000000 60%, blue 61%, rgb(0, 110, 255) 100%); */
     /* top: 50%; */
     /* left: 50%; */
@@ -431,6 +481,8 @@ nav li a:hover {
     inset: 60px;
     background: var(--primary-color);
     /* z-index: 1; */
+
+    /* filter: blur(1.5em); */
 }
 
 .cardtest4::before {
@@ -440,7 +492,7 @@ nav li a:hover {
 
 .cardtest4:hover::after,
 .cardtest4:hover::before {
-    /* filter: blur(1.5em); */
+    filter: blur(1.5em);
     /* opacity: 0.1; */
     cursor: pointer;
     /* transform: rotate(90deg); */
@@ -468,4 +520,13 @@ nav li a:hover {
     /* margin: 20px; */
     border-radius: 10px;
     z-index: 1;
+}
+
+.color-grid {
+    display: grid;
+    border: 3px solid var(--secondary-color);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
 }

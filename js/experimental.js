@@ -37,8 +37,3 @@ function contactinfoToggle() {
         x.style.display = "none";
     }
 }
-
-function copyDiscord() {
-    navigator.clipboard.writeText("LTSanic#7244");
-    alert("Copied to clipboard!");
-}
