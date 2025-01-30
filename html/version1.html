@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" type="text/css" href="../css/version1.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+
+        <script type="text/javascript" src="/js/version1.js"></script>
+    </head>
+
+    <body>
+        <!-- <div id="header">Hello</div> -->
+
+        <nav>
+            <div id="nav-name">Ethan Vletter</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactinfo">Contact Info</a></li>
+            </ul>
+        </nav>
+
+        <!-- -------------------------------- Home --------------------------------- -->
+
+        <div id="home" class="catalogue" onclick="homeToggle()">
+            <img id="home-image" class="catalogue-image" src="../images/HomeCatalogue.jpg" alt="Home image" />
+            <div class="catalogue-text">HOME</div>
+        </div>
+
+        <!-- <div id="csstest"></div> -->
+
+        <div id="home-block" class="block">
+            <div id="introduction-message">
+                <p id="head-introduction-paragraph">Welcome to my Online Portfolio :)</p>
+                <p class="introduction-paragraph">Computer Science Student / Junior Software Developer</p>
+                <p class="introduction-paragraph">
+                    This website will hopefully give a better insight into who I am and some of my work. For more information please view the <a href="#aboutme">About Me</a> section.
+                </p>
+                <!-- <img src="images/profilephoto.jpg" alt="Profile photo" /> -->
+            </div>
+            <div class="block">Experience</div>
+        </div>
+
+        <!-- ------------------------------ About Me ------------------------------- -->
+
+        <div id="aboutme" class="catalogue" onclick="aboutmeToggle()">
+            <img id="aboutme-image" class="catalogue-image" src="../images/AboutMeCatalogue.jpg" alt="About Me image" />
+            <div class="catalogue-text">ABOUT ME</div>
+        </div>
+
+        <div id="aboutme-block" class="block">
+            About Me
+
+            <div id="image-block">
+                <!-- <img id="profile-photo" src="images/profilephoto.jpg" alt="Profile photo" /> -->
+                <img id="profile-photo" src="../images/Ethan1.jpg" alt="Profile photo" />
+            </div>
+        </div>
+
+        <!-- ------------------------------ Projects ------------------------------- -->
+
+        <div id="projects" class="catalogue" onclick="projectsToggle()">
+            <img id="projects-image" class="catalogue-image" src="../images/ProjectsCatalogue.jpg" alt="Projects image" />
+            <div class="catalogue-text">PROJECTS</div>
+        </div>
+
+        <div id="projects-block" class="block">
+            Projects
+            <br />
+            <a href="version2.html">version2</a>
+            <br />
+            <a href="../index.html">version3</a>
+        </div>
+
+        <!-- ---------------------------- Contact Info ----------------------------- -->
+
+        <div id="contactinfo" class="catalogue" onclick="contactinfoToggle()">
+            <img id="contactinfo-image" class="catalogue-image" src="../images/ContactInfoCatalogue.jpg" alt="Contact Info image" />
+            <div class="catalogue-text">CONTACT INFO</div>
+        </div>
+
+        <!-- github -->
+        <div id="contactinfo-block" class="block">
+            <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
+                <a href="https://github.com/EthanVletter" target="_blank">
+                    <div class="logo-block-inner">
+                        <p class="logoheading">GitHub</p>
+                        <img id="github-logo" class="logo" src="../images/logos/github.png" alt="github image" />
+                        <p class="logoheading">EthanVletter</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- linkedin -->
+            <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
+                <a href="https://www.linkedin.com/in/ethan-vletter/" target="_blank">
+                    <div class="logo-block-inner">
+                        <p class="logoheading">Linkedin</p>
+                        <img id="linkedin-logo" class="logo" src="../images/logos/linkedin.png" alt="linkedin image" />
+                        <p class="logoheading">ethan-vletter</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- phone -->
+            <!-- <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
+                <a href="tel:+27614040283" target="_blank">
+                    <div class="logo-block-inner">
+                        <p class="logoheading">Phone number</p>
+                        <img id="whatsapp-logo" class="logo" src="images/logos/whatsapp.png" alt="whatsapp image" />
+                        <p class="logoheading">+27614040283</p>
+                    </div>
+                </a>
+            </div> -->
+
+            <!-- instagram -->
+            <!-- <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
+                <a href="https://www.instagram.com/ethan.vletter/" target="_blank">
+                    <div class="logo-block-inner">
+                        <p class="logoheading">Instagram</p>
+                        <img id="instagram-logo" class="logo" src="images/logos/instagram.png" alt="instagram image" />
+                        <p class="logoheading">ethan.vletter</p>
+                    </div>
+                </a>
+            </div> -->
+
+            <!-- discord -->
+            <!-- <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+
+                <div class="logo-block-inner" onclick="copyDiscord()">
+                    <p class="logoheading">Discord</p>
+                    <img id="discord-logo" class="logo" src="images/logos/discord.png" alt="discord image" />
+                    <p class="logoheading">LTSanic#7244</p>
+                </div>
+            </div> -->
+
+            <!-- mail -->
+            <div class="logo-block">
+                <span class="tooltip">Copied to clipboard!</span>
+                <a href="mailto:ethan.vletter@gmail.com" target="_blank">
+                    <div class="logo-block-inner">
+                        <p class="logoheading">Mail</p>
+                        <img id="google-logo" class="logo" src="../images/logos/google.png" alt="google image" />
+                        <p class="logoheading">ethan.vletter@gmail.com</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -86,13 +86,15 @@ header {
 }
 
 .header-bg {
-    animation: slide 3s ease-in-out infinite alternate;
-    animation: slide 1s ease-in-out forwards;
     background-image: linear-gradient(-60deg, var(--vermilion) 50%, var(--marian-blue) 50%);
+    background-image: linear-gradient(-60deg, var(--secondary-color) 50%, var(--primary-color) 50%);
     /* background-image: linear-gradient(-60deg, var(--vibrant1), var(--vibrant2)); */
     /* background-image: linear-gradient(-60deg, var(--vibrant3), var(--vibrant4)); */
     /* background-image: linear-gradient(-60deg, var(--vibrant5), var(--vibrant6)); */
     /* background-image: linear-gradient(-60deg, var(--vibrant4) 50%, var(--vibrant3) 50%); */
+
+    animation: slide 3s ease-in-out infinite alternate;
+    animation: slide 1s ease-in-out forwards;
 
     height: 100vh;
     width: 200%;
@@ -104,22 +106,26 @@ header {
     /* top: 0; */
     /* left: -50%; */
     /* right: -50%; */
-    opacity: 0.8;
+    opacity: 0.6;
     /* position: fixed; */
     z-index: 1;
     position: absolute;
 }
 
 .header-bg2 {
+    background-image: linear-gradient(-60deg, var(--primary-color) 50%, var(--secondary-color) 50%);
+
     animation-duration: 4s;
     animation-direction: alternate-reverse;
 
-    animation: slide2 2s ease-in-out forwards;
+    animation: slide2 3s ease-in-out forwards;
 }
 
 .header-bg3 {
+    background-image: linear-gradient(-60deg, var(--secondary-color) 50%, var(--secondary-color) 50%);
+
     animation-duration: 5s;
-    animation: slide3 3s ease-in-out forwards;
+    animation: slide3 2s ease-in-out forwards;
 }
 
 @keyframes slide {
@@ -127,7 +133,9 @@ header {
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(10%);
+        /* transform: translateX(10%); */
+        transform: translateX(0%);
+        /* transform: translateX(100%); */
     }
 }
 
@@ -136,24 +144,28 @@ header {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(-10%);
+        /* transform: translateX(-10%); */
+        transform: translateX(0%);
+        /* transform: translateX(-100%); */
     }
 }
 
 @keyframes slide3 {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(100%);
     }
     100% {
-        transform: translateX(10%);
+        /* transform: translateX(10%); */
+        transform: translateX(0%);
+        /* transform: translateY(-100%); */
     }
 }
 
 .header-content {
-    background-color: rgba(255, 255, 255, 0.8);
-    background-color: var(--onyx);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* background-color: var(--onyx); */
     /* border-radius: 0.25em; */
-    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25); */
     box-sizing: border-box;
     /* left: -30%; */
     /* top: -5%; */
