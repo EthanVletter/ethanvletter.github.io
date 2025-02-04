@@ -37,3 +37,7 @@ function contactinfoToggle() {
         x.style.display = "none";
     }
 }
+
+function flipCard(card) {
+    card.classList.toggle("flipped");
+}
