@@ -809,6 +809,9 @@ nav li a:hover {
     border: 3px solid var(--secondary-color);
 
     transform: rotateY(180deg);
+
+    text-align: left;
+    padding: 10px;
 }
 
 .flip-card-front:hover,
