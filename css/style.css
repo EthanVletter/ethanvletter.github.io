@@ -53,7 +53,7 @@ body {
 html,
 body,
 footer {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -280,16 +280,20 @@ footer {
     height: 100px;
     /* border: 1px solid var(--highlight-green); */
     background-color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 12px;
 }
 
 .card,
 .card2 {
     background-color: var(--primary-color);
     width: 80%;
-    height: 200px;
+    /* height: 200px; */
     /* height: 100px; */
     margin: 20px auto;
-    padding: 2em;
+    padding: 20px;
     text-align: center;
     border-radius: 10px;
     position: relative;
@@ -515,59 +519,6 @@ nav li a:hover {
     cursor: pointer;
 }
 
-.cardtest {
-    /* background-color: #0b0c15; */
-    background-color: var(--primary-color);
-    /* width: 500px; */
-    width: 80%;
-    height: 200px;
-    margin: 20px auto;
-    /* padding: 2em; */
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
-    /* display: inline-block; */
-    /* overflow: hidden; */
-    /* z-index: 0; */
-    /* transition: transform 0.3s ease; */
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cardtest::after,
-.cardtest::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    /* background-image: conic-gradient(rgba(2, 2, 161, 0.8), rgba(32, 129, 255, 0.8), rgba(2, 2, 161, 0.8)); */
-    /* background-image: conic-gradient(transparent 25%, blue, transparent, blue); */
-    /* background-image: linear-gradient(to bottom right, blue 0%, rgba(0, 0, 255, 0) 40%, rgba(0, 0, 255, 0) 80%, blue 100%); */
-    background-image: linear-gradient(to bottom right, #1c1f2c 0%, rgba(0, 0, 255, 0) 40%, rgba(0, 0, 255, 0) 80%, #1c1f2c 100%);
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 3px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.cardtest::before {
-    filter: blur(1.5em);
-    opacity: 0.2;
-}
-
-.cardtest:hover {
-    cursor: pointer;
-}
-
-.card-texttest {
-    font-size: 30px;
-}
-
 .heading-card {
     /* background-color: #0b0c15; */
     background-color: #0b0c15;
@@ -692,7 +643,8 @@ nav li a:hover {
     /* border: 3px solid var(--secondary-color); */
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
     gap: 15px;
     /* justify-content: center; */
     padding: 15px;
