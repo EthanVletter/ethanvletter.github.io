@@ -67,9 +67,6 @@ header {
     width: 100%;
     /* border: 1px solid var(--highlight-green); */
     background-color: white;
-    background-color: var(--light-background);
-    background-color: var(--light-accent-blue);
-    background-color: var(--platinum);
     background-color: var(--primary-color);
     color: black;
     /* background-image: linear-gradient(to right, var(--marian-blue), var(--azure), var(--vermilion)); */
@@ -109,6 +106,7 @@ header {
     /* left: -50%; */
     /* right: -50%; */
     opacity: 0.6;
+    opacity: 0.2;
     /* position: fixed; */
     z-index: 1;
     position: absolute;
@@ -200,20 +198,18 @@ header {
 
 .hcontent1 {
     position: absolute;
+    position: relative;
 
-    /* top: 80px; */
     top: 10%;
-    /* left: 220px; */
-    left: 10%;
+    /* left: 10%; */
 }
 
 .hcontent2 {
-    position: absolute;
+    /* position: absolute; */
 
-    /* bottom: 80px; */
-    bottom: 10%;
-    /* right: 220px; */
-    right: 10%;
+    /* bottom: 10%; */
+    /* right: 10%; */
+    font-size: 20px;
 }
 
 @keyframes fadeIn {
@@ -242,11 +238,11 @@ header {
     /* font-size: 4vmin; */
     /* font-size: 6vh; */
 
-    /* background-image: linear-gradient(135deg, var(--vermilion) 0%, var(--vermilion) 50%, var(--marian-blue) 100%);
+    background-image: linear-gradient(135deg, var(--vibrant2) 0%, var(--vibrant1) 30%, var(--vibrant1) 60%, var(--vibrant2) 100%);
     color: transparent;
-    background-clip: text; */
+    background-clip: text;
 
-    color: var(--vermilion);
+    /* color: var(--vermilion); */
 
     /* display: inline; */
 }
@@ -255,8 +251,22 @@ header {
     width: 150px;
     height: 50px;
     position: relative;
+    box-shadow: 0;
+    border: solid 1px var(--vibrant4);
 
     /* background: linear-gradient(to right, var(--vermilion), var(--marian-blue)); */
+    background: linear-gradient(to right, var(--vibrant6), var(--vibrant5));
+    transition: 0.3s transform 1s;
+    transition: transform 1s;
+}
+
+.header-btn:hover {
+    scale: 1.05;
+    border: 3px solid var(--azure-transparent);
+
+    background: linear-gradient(to left, var(--vibrant4), var(--vibrant6));
+    transform: scale(1.05);
+    transform: background(linear-gradient(to left, var(--vibrant4), var(--vibrant3)));
 }
 
 /* .header-btn::before,
