@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
 
-        <script type="text/javascript" src="js/index.js"></script>
+        <script defer type="text/javascript" src="js/index.js"></script>
     </head>
 
     <body>
@@ -50,7 +50,7 @@
             <!-- -------------------------------- Home --------------------------------- -->
 
             <div id="home-block" class="block">
-                <hr class="horizontal-line" />
+                <hr class="horizontal-line hidden" />
 
                 <!-- <div class="block">Experience</div> -->
 
@@ -58,7 +58,7 @@
                     <p class="subheading-card-text">Work Experience</p>
                 </div> -->
 
-                <div class="subheading-card hidden">
+                <div class="subheading-card">
                     <p class="subheading-card-text hidden">University Projects</p>
                 </div>
             </div>
@@ -180,10 +180,11 @@
             <!-- <div id="aboutme" class="card" onclick="aboutmeToggle()">
                 <p class="card-text">ABOUT ME</p>
             </div> -->
-
-            <div id="aboutme" class="subheading-card hidden">
+            <!-- <div class="hidden"> -->
+            <div id="aboutme" class="subheading-card">
                 <p class="subheading-card-text hidden">ABOUT ME</p>
             </div>
+            <!-- </div> -->
 
             <!-- <div id="aboutme-block" class="block"> -->
             <div id="aboutme-block" class="block">
@@ -197,34 +198,34 @@
                     <div class="card hidden">
                         <img class="aboutme-image" src="../images/AboutMe1.jpg" alt="AboutMe1" />
                     </div>
-                    <div class="card2 hidden">
+                    <div class="card2">
                         <!-- <p>Ethan Vletter</p> -->
-                        <p>
+                        <p class="hidden">
                             I'm a 21 years old, final-year <span style="color: var(--vermilion)">BSc Computer Science</span> student at the
                             <span style="color: var(--marian-blue)">University of Pretoria</span>, I am based in Kempton Park, Gauteng.
                         </p>
 
-                        <p>My main goal is to learn and expand my skill set. I want to grow both as a person and as a programmer.</p>
+                        <p class="hidden">My main goal is to learn and expand my skill set. I want to grow both as a person and as a programmer.</p>
                     </div>
-                    <div class="card2 hidden">
-                        <p>
+                    <div class="card2">
+                        <p class="hidden">
                             I don't claim to know everything, but I love <span style="color: var(--vermilion)">figuring out</span> how things work and I enjoy engaging with
                             <span style="color: var(--marian-blue)">complex problems</span>. Whether working independently or in a team, I want to build well-structured solutions.
                         </p>
                     </div>
 
-                    <div class="card hidden">
+                    <div class="card">
                         <img class="aboutme-image" src="../images/AboutMe2.jpg" alt="AboutMe1" />
                     </div>
                     <div class="card hidden">
                         <img class="aboutme-image" src="../images/AboutMe3.jpg" alt="AboutMe1" />
                     </div>
-                    <div class="card2 hidden">
-                        <p>
+                    <div class="card2">
+                        <p class="hidden">
                             I put <span style="color: var(--vermilion)">a lot of effort</span> into my work and hope that it reflects in the results. I'm an
                             <span style="color: var(--marian-blue)">open-minded</span> person and I would appreciate constructive feedback to improve on myself and my work.
                         </p>
-                        <p>Unrelated - I also like video games and motorcycles :)</p>
+                        <p class="hidden">Unrelated - I also like video games and motorcycles :)</p>
                     </div>
                 </div>
 
@@ -243,7 +244,7 @@
                 <p class="card-text">PROJECTS</p>
             </div> -->
 
-            <div id="projects" class="subheading-card hidden">
+            <div id="projects" class="subheading-card">
                 <p class="subheading-card-text hidden">PROJECTS</p>
             </div>
 
@@ -258,11 +259,11 @@
         </main>
     </body>
 
-    <hr class="horizontal-line" />
+    <hr class="horizontal-line hidden" />
 
     <!-- ---------------------------- Contact Info ----------------------------- -->
 
-    <div id="contactinfo" class="subheading-card hidden">
+    <div id="contactinfo" class="subheading-card">
         <p class="subheading-card-text hidden">CONTACT INFO</p>
     </div>
 
@@ -301,7 +302,7 @@
         </div>
     </div>
 
-    <hr class="horizontal-line" />
+    <!-- <hr class="horizontal-line hidden" /> -->
 
     <footer>
         <p>© Ethan Vletter | updated January 2025</p>
