@@ -31,12 +31,12 @@
             <div class="header-bg"></div>
             <div class="header-bg header-bg2"></div>
             <div class="header-bg header-bg3"></div>
-            <div class="header-content hcontent1">
+            <div class="header-content hcontent1 hidden">
                 <h3>Hello!</h3>
                 <h3 style="display: inline">My name is <span class="header-content-colortext">Ethan</span></h3>
                 <h6 style="font-size: 2vmin; color: var(--azure)">Computer Science Student | Junior Software / Web Developer</h6>
             </div>
-            <div class="header-content hcontent2">
+            <div class="header-content hcontent2 hidden">
                 <h6>You can view a standard pdf CV here:</h6>
                 <button class="header-btn" onclick="window.open('EthanVletter CV.pdf')">VIEW CV</button>
                 <h6>You can contact me here:</h6>
@@ -58,16 +58,16 @@
                     <p class="subheading-card-text">Work Experience</p>
                 </div> -->
 
-                <div class="subheading-card">
-                    <p class="subheading-card-text">University Projects</p>
+                <div class="subheading-card hidden">
+                    <p class="subheading-card-text hidden">University Projects</p>
                 </div>
             </div>
 
             <div class="flip-card-container">
-                <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card hidden" onclick="flipCard(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="flip-card-image" src="/images/logos/programming.png" />
+                            <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
 
                             <div class="title">App concept presentation</div>
                             <p>Click me!</p>
@@ -80,12 +80,12 @@
                     </div>
                 </div>
 
-                <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card hidden" onclick="flipCard(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="flip-card-image" src="/images/logos/programming.png" />
+                            <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
 
-                            <div class="title">Propery viewing website</div>
+                            <div class="title">Property viewing website</div>
                             <p>Click me!</p>
                         </div>
                         <div class="flip-card-back">
@@ -99,10 +99,10 @@
                     </div>
                 </div>
 
-                <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card hidden" onclick="flipCard(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="flip-card-image" src="/images/logos/code.png" />
+                            <!-- <img class="flip-card-image" src="/images/logos/code.png" /> -->
 
                             <div class="title">Movie rating website</div>
                             <p>Click me!</p>
@@ -118,10 +118,10 @@
                     </div>
                 </div>
 
-                <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card hidden" onclick="flipCard(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="flip-card-image" src="/images/logos/programming.png" />
+                            <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
 
                             <div class="title">Design patterns in C++</div>
                             <p>Click me!</p>
@@ -133,10 +133,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card" onclick="flipCard(this)">
+
+                <div class="flip-card hidden" onclick="flipCard(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="flip-card-image" src="/images/logos/code.png" />
+                            <!-- <img class="flip-card-image" src="/images/logos/code.png" /> -->
 
                             <div class="title">City builder in C++</div>
                             <p>Click me!</p>
@@ -180,8 +181,8 @@
                 <p class="card-text">ABOUT ME</p>
             </div> -->
 
-            <div id="aboutme" class="subheading-card">
-                <p class="subheading-card-text">ABOUT ME</p>
+            <div id="aboutme" class="subheading-card hidden">
+                <p class="subheading-card-text hidden">ABOUT ME</p>
             </div>
 
             <!-- <div id="aboutme-block" class="block"> -->
@@ -193,10 +194,10 @@
             </div> -->
 
                 <div class="aboutme-grid">
-                    <div class="card">
+                    <div class="card hidden">
                         <img class="aboutme-image" src="../images/AboutMe1.jpg" alt="AboutMe1" />
                     </div>
-                    <div class="card2">
+                    <div class="card2 hidden">
                         <!-- <p>Ethan Vletter</p> -->
                         <p>
                             I'm a 21 years old, final-year <span style="color: var(--vermilion)">BSc Computer Science</span> student at the
@@ -205,25 +206,34 @@
 
                         <p>My main goal is to learn and expand my skill set. I want to grow both as a person and as a programmer.</p>
                     </div>
-                    <div class="card2">
+                    <div class="card2 hidden">
                         <p>
                             I don't claim to know everything, but I love <span style="color: var(--vermilion)">figuring out</span> how things work and I enjoy engaging with
                             <span style="color: var(--marian-blue)">complex problems</span>. Whether working independently or in a team, I want to build well-structured solutions.
                         </p>
                     </div>
 
-                    <div class="card">
+                    <div class="card hidden">
                         <img class="aboutme-image" src="../images/AboutMe2.jpg" alt="AboutMe1" />
                     </div>
-                    <div class="card">
+                    <div class="card hidden">
                         <img class="aboutme-image" src="../images/AboutMe3.jpg" alt="AboutMe1" />
                     </div>
-                    <div class="card2">
+                    <div class="card2 hidden">
                         <p>
                             I put <span style="color: var(--vermilion)">a lot of effort</span> into my work and hope that it reflects in the results. I'm an
                             <span style="color: var(--marian-blue)">open-minded</span> person and I would appreciate constructive feedback to improve on myself and my work.
                         </p>
+                        <p>Unrelated - I also like video games and motorcycles :)</p>
                     </div>
+                </div>
+
+                <div class="lang-grid">
+                    <img class="lang-icon hidden" src="images/logos/html-5-white.png" />
+                    <img class="lang-icon hidden" src="images/logos/css-3-white.png" />
+                    <img class="lang-icon hidden" src="images/logos/js.png" />
+                    <img class="lang-icon hidden" src="images/logos/c-.png" />
+                    <img class="lang-icon hidden" src="images/logos/java.png" />
                 </div>
             </div>
 
@@ -233,17 +243,17 @@
                 <p class="card-text">PROJECTS</p>
             </div> -->
 
-            <div id="projects" class="subheading-card">
-                <p class="subheading-card-text">PROJECTS</p>
+            <div id="projects" class="subheading-card hidden">
+                <p class="subheading-card-text hidden">PROJECTS</p>
             </div>
 
             <div id="projects-block" class="block">
-                Projects
+                <h2 class="hidden">Coming soon...</h2>
 
                 <br />
-                <a href="html/version1.html">version1</a>
+                <!-- <a href="html/version1.html">version1</a> -->
                 <br />
-                <a href="html/version2.html">version2</a>
+                <!-- <a href="html/version2.html">version2</a> -->
             </div>
         </main>
     </body>
@@ -252,13 +262,13 @@
 
     <!-- ---------------------------- Contact Info ----------------------------- -->
 
-    <div id="contactinfo" class="subheading-card">
-        <p class="subheading-card-text">CONTACT INFO</p>
+    <div id="contactinfo" class="subheading-card hidden">
+        <p class="subheading-card-text hidden">CONTACT INFO</p>
     </div>
 
     <!-- github -->
     <div id="contactinfo-block" class="block">
-        <div class="logo-block">
+        <div class="logo-block hidden">
             <a href="https://github.com/EthanVletter" target="_blank">
                 <div class="logo-block-inner">
                     <p class="logoheading">GitHub</p>
@@ -269,7 +279,7 @@
         </div>
 
         <!-- linkedin -->
-        <div class="logo-block">
+        <div class="logo-block hidden">
             <a href="https://www.linkedin.com/in/ethan-vletter/" target="_blank">
                 <div class="logo-block-inner">
                     <p class="logoheading">Linkedin</p>
@@ -280,7 +290,7 @@
         </div>
 
         <!-- mail -->
-        <div class="logo-block">
+        <div class="logo-block hidden">
             <a href="mailto:ethan.vletter@gmail.com" target="_blank">
                 <div class="logo-block-inner">
                     <p class="logoheading">Mail</p>
