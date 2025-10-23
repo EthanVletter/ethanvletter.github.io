@@ -1,164 +1,202 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <title>EthanVletter | Computer Science Student</title>
-        <link rel="icon" type="image/png" href="/images/logos/favicon.png" />
-        <link rel="shortcut icon" type="image/png" href="/images/logos/favicon.png" />
+  <head>
+    <title>EthanVletter | Computer Science Student</title>
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/images/logos/favicon.png"
+    />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <script defer type="text/javascript" src="js/index.js"></script>
-    </head>
+    <script defer type="text/javascript" src="js/index.js"></script>
+  </head>
 
-    <body>
-        <nav>
-            <div id="nav-name">Ethan Vletter</div>
-            <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contactinfo">Contact Info</a></li>
-            </ul>
-        </nav>
+  <body>
+    <nav>
+      <div id="nav-name">Ethan Vletter</div>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contactinfo">Contact Info</a></li>
+      </ul>
+    </nav>
 
-        <header>
-            <div class="header-bg"></div>
-            <div class="header-bg header-bg2"></div>
-            <div class="header-bg header-bg3"></div>
-            <div class="header-content hcontent1 hidden">
-                <h3>Hello!</h3>
-                <h3 style="display: inline">My name is <span class="header-content-colortext">Ethan</span></h3>
-                <h6 style="font-size: 2vmin; color: var(--azure)">Computer Science Student | Junior Software Engineer</h6>
-            </div>
-            <div class="header-content hcontent2 hidden">
-                <h6>You can view a standard pdf CV here:</h6>
-                <button class="header-btn" onclick="window.open('EthanVletter CV.pdf')">VIEW CV</button>
-                <h6>You can contact me here:</h6>
-                <a href="#contactinfo">
-                    <button class="header-btn">CONTACT ME</button>
-                </a>
-            </div>
-        </header>
+    <header>
+      <div class="header-bg"></div>
+      <div class="header-bg header-bg2"></div>
+      <div class="header-bg header-bg3"></div>
+      <div class="header-content hcontent1 hidden">
+        <h3>Hello!</h3>
+        <h3 style="display: inline">
+          My name is <span class="header-content-colortext">Ethan</span>
+        </h3>
+        <h6 style="font-size: 2vmin; color: var(--azure)">
+          Computer Science Student | Junior Software Engineer
+        </h6>
+      </div>
+      <div class="header-content hcontent2 hidden">
+        <h6>You can view a standard pdf CV here:</h6>
+        <button class="header-btn" onclick="window.open('EthanVletter CV.pdf')">
+          VIEW CV
+        </button>
+        <h6>You can contact me here:</h6>
+        <a href="#contactinfo">
+          <button class="header-btn">CONTACT ME</button>
+        </a>
+      </div>
+    </header>
 
-        <main>
-            <!-- -------------------------------- Home --------------------------------- -->
+    <main>
+      <!-- -------------------------------- Home --------------------------------- -->
 
-            <div id="home-block" class="block">
-                <hr class="horizontal-line hidden" />
+      <div id="home-block" class="block">
+        <hr class="horizontal-line hidden" />
 
-                <!-- <div class="block">Experience</div> -->
+        <!-- <div class="block">Experience</div> -->
 
-                <!-- <div class="subheading-card">
+        <!-- <div class="subheading-card">
                     <p class="subheading-card-text">Work Experience</p>
                 </div> -->
 
-                <div class="subheading-card">
-                    <p class="subheading-card-text hidden">University Projects</p>
-                </div>
+        <div class="subheading-card">
+          <p class="subheading-card-text hidden">University Projects</p>
+        </div>
+      </div>
+
+      <div class="flip-card-container">
+        <div class="flip-card hidden" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
+              <img class="flip-card-image" src="/images/Presentation.png" />
+
+              <div class="title">App concept presentation</div>
+              <p>Click me!</p>
             </div>
+            <div class="flip-card-back">
+              <div class="title">App concept presentation</div>
+              <p>
+                Collaboration on conceptualizing the design and presenting a
+                mobile application.
+              </p>
+              <p style="color: var(--vibrant6)">Public speaking, group-work</p>
+            </div>
+          </div>
+        </div>
 
-            <div class="flip-card-container">
-                <div class="flip-card hidden" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
-                            <img class="flip-card-image" src="/images/Presentation.png" />
+        <div class="flip-card hidden" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
+              <img class="flip-card-image" src="/images/Property_Viewing.png" />
 
-                            <div class="title">App concept presentation</div>
-                            <p>Click me!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="title">App concept presentation</div>
-                            <p>Collaboration on conceptualizing the design and presenting a mobile application.</p>
-                            <p style="color: var(--vibrant6)">Public speaking, group-work</p>
-                        </div>
-                    </div>
-                </div>
+              <div class="title">Property viewing website</div>
+              <p>Click me!</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="title">Property viewing website</div>
+              <p>
+                Developed a functional property listing website similar to
+                Property24 including account creation and verification, property
+                listing and viewing, remembering user settings using browser
+                cookies.
+              </p>
+              <p style="color: var(--vibrant6)">
+                Public speaking, website creation, working under strict
+                deadlines.
+              </p>
+            </div>
+          </div>
+        </div>
 
-                <div class="flip-card hidden" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
-                            <img class="flip-card-image" src="/images/Property_Viewing.png" />
+        <div class="flip-card hidden" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!-- <img class="flip-card-image" src="/images/logos/code.png" /> -->
+              <img class="flip-card-image" src="/images/Movie_Rating.png" />
 
-                            <div class="title">Property viewing website</div>
-                            <p>Click me!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="title">Propery viewing website</div>
-                            <p>
-                                Developed a functional property listing website similar to Property24 including account creation and verification, property listing and viewing, remembering user
-                                settings using browser cookies.
-                            </p>
-                            <p style="color: var(--vibrant6)">Public speaking, website creation, working under strict deadlines.</p>
-                        </div>
-                    </div>
-                </div>
+              <div class="title">Movie rating website</div>
+              <p>Click me!</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="title">Movie rating website</div>
+              <p>
+                Developed a functional movie-rating website with a group of
+                members including account creation, finding movies, and seeing
+                reviews as well as having an option to leave a review, this
+                website also gives movie recommendations using the phpMyAdmin
+                data.
+              </p>
+              <p style="color: var(--vibrant6)">
+                Public speaking, group-work, website creation, collaborative
+                coding
+              </p>
+            </div>
+          </div>
+        </div>
 
-                <div class="flip-card hidden" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <!-- <img class="flip-card-image" src="/images/logos/code.png" /> -->
-                            <img class="flip-card-image" src="/images/Movie_Rating.png" />
+        <div class="flip-card hidden" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
+              <img class="flip-card-image" src="/images/Design_Patterns.png" />
 
-                            <div class="title">Movie rating website</div>
-                            <p>Click me!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="title">Movie rating website</div>
-                            <p>
-                                Developed a functional movie-rating website with a group of members including account creation, finding movies, and seeing reviews as well as having an option to leave
-                                a review, this website also gives movie recommendations using the phpMyAdmin data.
-                            </p>
-                            <p style="color: var(--vibrant6)">Public speaking, group-work, website creation, collaborative coding</p>
-                        </div>
-                    </div>
-                </div>
+              <div class="title">Design patterns in C++</div>
+              <p>Click me!</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="title">Design patterns in C++</div>
+              <p>
+                We created various projects to show the aspects of how design
+                patterns can be used.
+              </p>
+              <p style="color: var(--vibrant6)">
+                group-work, understanding design patterns, working under strict
+                deadlines
+              </p>
+            </div>
+          </div>
+        </div>
 
-                <div class="flip-card hidden" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <!-- <img class="flip-card-image" src="/images/logos/programming.png" /> -->
-                            <img class="flip-card-image" src="/images/Design_Patterns.png" />
+        <div class="flip-card hidden" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!-- <img class="flip-card-image" src="/images/logos/code.png" /> -->
+              <img class="flip-card-image" src="/images/City_Builder.png" />
 
-                            <div class="title">Design patterns in C++</div>
-                            <p>Click me!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="title">Design patterns in C++</div>
-                            <p>We created various projects to show the aspects of how design patterns can be used.</p>
-                            <p style="color: var(--vibrant6)">group-work, understanding design patterns, working under strict deadlines</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card hidden" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <!-- <img class="flip-card-image" src="/images/logos/code.png" /> -->
-                            <img class="flip-card-image" src="/images/City_Builder.png" />
-
-                            <div class="title">City builder in C++</div>
-                            <p style="padding-bottom: 10px">Click me!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="title">City builder in C++</div>
-                            <p>
-                                I was part of a seven-member team that created a fully playable terminal city building game in C++ focusing on using design patterns to complete various goals and
-                                making different functions and files collaborate with each other.
-                            </p>
-                            <p style="color: var(--vibrant6)">group-work, understanding design patterns, working under strict deadlines</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="flip-card" onclick="flipCard(this)">
+              <div class="title">City builder in C++</div>
+              <p style="padding-bottom: 10px">Click me!</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="title">City builder in C++</div>
+              <p>
+                I was part of a seven-member team that created a fully playable
+                terminal city building game in C++ focusing on using design
+                patterns to complete various goals and making different
+                functions and files collaborate with each other.
+              </p>
+              <p style="color: var(--vibrant6)">
+                group-work, understanding design patterns, working under strict
+                deadlines
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="flip-card" onclick="flipCard(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img class="flip-card-image" src="/images/logos/code.png" />
@@ -171,146 +209,190 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
+      </div>
 
-            <!-- <div class="heading-card">
+      <!-- <div class="heading-card">
                     <p class="heading-card-text">heading-card</p>
                 </div> -->
 
-            <!-- <div class="subheading-card">
+      <!-- <div class="subheading-card">
                     <p class="subheading-card-text">subheading-card</p>
                 </div> -->
 
-            <!-- ------------------------------ About Me ------------------------------- -->
+      <!-- ------------------------------ About Me ------------------------------- -->
 
-            <!-- <div id="aboutme" class="card" onclick="aboutmeToggle()">
+      <!-- <div id="aboutme" class="card" onclick="aboutmeToggle()">
                 <p class="card-text">ABOUT ME</p>
             </div> -->
-            <!-- <div class="hidden"> -->
-            <div id="aboutme" class="subheading-card">
-                <p class="subheading-card-text hidden">ABOUT ME</p>
-            </div>
-            <!-- </div> -->
+      <!-- <div class="hidden"> -->
+      <div id="aboutme" class="subheading-card">
+        <p class="subheading-card-text hidden">ABOUT ME</p>
+      </div>
+      <!-- </div> -->
 
-            <!-- <div id="aboutme-block" class="block"> -->
-            <div id="aboutme-block" class="block">
-                <!-- About Me -->
+      <!-- <div id="aboutme-block" class="block"> -->
+      <div id="aboutme-block" class="block">
+        <!-- About Me -->
 
-                <!-- <div id="image-block">
+        <!-- <div id="image-block">
                 <img id="profile-photo" src="../images/Ethan1.jpg" alt="Profile photo" />
             </div> -->
 
-                <div class="aboutme-grid">
-                    <div class="card hidden">
-                        <img class="aboutme-image" src="../images/AboutMe1.jpg" alt="AboutMe1" />
-                    </div>
-                    <div class="card2">
-                        <!-- <p>Ethan Vletter</p> -->
-                        <p class="hidden">
-                            I'm a 21 years old, final-year <span style="color: var(--vermilion)">BSc Computer Science</span> student at the
-                            <span style="color: var(--marian-blue)">University of Pretoria</span>, I am based in Kempton Park, Gauteng.
-                        </p>
+        <div class="aboutme-grid">
+          <div class="card hidden">
+            <img
+              class="aboutme-image"
+              src="../images/AboutMe1.jpg"
+              alt="AboutMe1"
+            />
+          </div>
+          <div class="card2">
+            <!-- <p>Ethan Vletter</p> -->
+            <p class="hidden">
+              I'm a 21 years old, final-year
+              <span style="color: var(--vermilion)">BSc Computer Science</span>
+              student at the
+              <span style="color: var(--marian-blue)"
+                >University of Pretoria</span
+              >, I am based in Kempton Park, Gauteng.
+            </p>
 
-                        <p class="hidden">My main goal is to learn and expand my skill set. I want to grow both as a person and as a programmer.</p>
-                    </div>
-                    <div class="card2">
-                        <p class="hidden">
-                            I don't claim to know everything, but I love <span style="color: var(--vermilion)">figuring out</span> how things work and I enjoy engaging with
-                            <span style="color: var(--marian-blue)">complex problems</span>. Whether working independently or in a team, I want to build well-structured solutions.
-                        </p>
-                    </div>
+            <p class="hidden">
+              My main goal is to learn and expand my skill set. I want to grow
+              both as a person and as a programmer.
+            </p>
+          </div>
+          <div class="card2">
+            <p class="hidden">
+              I don't claim to know everything, but I love
+              <span style="color: var(--vermilion)">figuring out</span> how
+              things work and I enjoy engaging with
+              <span style="color: var(--marian-blue)">complex problems</span>.
+              Whether working independently or in a team, I want to build
+              well-structured solutions.
+            </p>
+          </div>
 
-                    <div class="card">
-                        <img class="aboutme-image" src="../images/AboutMe2.jpg" alt="AboutMe1" />
-                    </div>
-                    <div class="card hidden">
-                        <img class="aboutme-image" src="../images/AboutMe3.jpg" alt="AboutMe1" />
-                    </div>
-                    <div class="card2">
-                        <p class="hidden">
-                            I put <span style="color: var(--vermilion)">a lot of effort</span> into my work and hope that it reflects in the results. I'm an
-                            <span style="color: var(--marian-blue)">open-minded</span> person and I would appreciate constructive feedback to improve on myself and my work.
-                        </p>
-                        <p class="hidden">Unrelated - I also like video games and motorcycles :)</p>
-                    </div>
-                </div>
+          <div class="card">
+            <img
+              class="aboutme-image"
+              src="../images/AboutMe2.jpg"
+              alt="AboutMe1"
+            />
+          </div>
+          <div class="card hidden">
+            <img
+              class="aboutme-image"
+              src="../images/AboutMe3.jpg"
+              alt="AboutMe1"
+            />
+          </div>
+          <div class="card2">
+            <p class="hidden">
+              I put
+              <span style="color: var(--vermilion)">a lot of effort</span> into
+              my work and hope that it reflects in the results. I'm an
+              <span style="color: var(--marian-blue)">open-minded</span> person
+              and I would appreciate constructive feedback to improve on myself
+              and my work.
+            </p>
+            <p class="hidden">
+              Unrelated - I also like video games and motorcycles :)
+            </p>
+          </div>
+        </div>
 
-                <div class="lang-grid">
-                    <img class="lang-icon hidden" src="images/logos/html-5-white.png" />
-                    <img class="lang-icon hidden" src="images/logos/css-3-white.png" />
-                    <img class="lang-icon hidden" src="images/logos/js.png" />
-                    <img class="lang-icon hidden" src="images/logos/c-.png" />
-                    <img class="lang-icon hidden" src="images/logos/java.png" />
-                </div>
-            </div>
+        <div class="lang-grid">
+          <img class="lang-icon hidden" src="images/logos/html-5-white.png" />
+          <img class="lang-icon hidden" src="images/logos/css-3-white.png" />
+          <img class="lang-icon hidden" src="images/logos/js.png" />
+          <img class="lang-icon hidden" src="images/logos/c-.png" />
+          <img class="lang-icon hidden" src="images/logos/java.png" />
+        </div>
+      </div>
 
-            <!-- ------------------------------ Projects ------------------------------- -->
+      <!-- ------------------------------ Projects ------------------------------- -->
 
-            <!-- <div id="projects" class="card" onclick="projectsToggle()">
+      <!-- <div id="projects" class="card" onclick="projectsToggle()">
                 <p class="card-text">PROJECTS</p>
             </div> -->
 
-            <div id="projects" class="subheading-card">
-                <p class="subheading-card-text hidden">PROJECTS</p>
-            </div>
+      <div id="projects" class="subheading-card">
+        <p class="subheading-card-text hidden">PROJECTS</p>
+      </div>
 
-            <div id="projects-block" class="block">
-                <h2 class="hidden">Coming soon...</h2>
+      <div id="projects-block" class="block">
+        <h2 class="hidden">Coming soon...</h2>
 
-                <br />
-                <!-- <a href="html/version1.html">version1</a> -->
-                <br />
-                <!-- <a href="html/version2.html">version2</a> -->
-            </div>
-        </main>
-    </body>
+        <br />
+        <!-- <a href="html/version1.html">version1</a> -->
+        <br />
+        <!-- <a href="html/version2.html">version2</a> -->
+      </div>
+    </main>
+  </body>
 
-    <hr class="horizontal-line hidden" />
+  <hr class="horizontal-line hidden" />
 
-    <!-- ---------------------------- Contact Info ----------------------------- -->
+  <!-- ---------------------------- Contact Info ----------------------------- -->
 
-    <div id="contactinfo" class="subheading-card">
-        <p class="subheading-card-text hidden">CONTACT INFO</p>
+  <div id="contactinfo" class="subheading-card">
+    <p class="subheading-card-text hidden">CONTACT INFO</p>
+  </div>
+
+  <!-- github -->
+  <div id="contactinfo-block" class="block">
+    <div class="logo-block hidden">
+      <a href="https://github.com/EthanVletter" target="_blank">
+        <div class="logo-block-inner">
+          <p class="logoheading">GitHub</p>
+          <img
+            id="github-logo"
+            class="logo"
+            src="../images/logos/github.png"
+            alt="github image"
+          />
+          <p class="logoheading">EthanVletter</p>
+        </div>
+      </a>
     </div>
 
-    <!-- github -->
-    <div id="contactinfo-block" class="block">
-        <div class="logo-block hidden">
-            <a href="https://github.com/EthanVletter" target="_blank">
-                <div class="logo-block-inner">
-                    <p class="logoheading">GitHub</p>
-                    <img id="github-logo" class="logo" src="../images/logos/github.png" alt="github image" />
-                    <p class="logoheading">EthanVletter</p>
-                </div>
-            </a>
+    <!-- linkedin -->
+    <div class="logo-block hidden">
+      <a href="https://www.linkedin.com/in/ethan-vletter/" target="_blank">
+        <div class="logo-block-inner">
+          <p class="logoheading">Linkedin</p>
+          <img
+            id="linkedin-logo"
+            class="logo"
+            src="../images/logos/linkedin.png"
+            alt="linkedin image"
+          />
+          <p class="logoheading">ethan-vletter</p>
         </div>
-
-        <!-- linkedin -->
-        <div class="logo-block hidden">
-            <a href="https://www.linkedin.com/in/ethan-vletter/" target="_blank">
-                <div class="logo-block-inner">
-                    <p class="logoheading">Linkedin</p>
-                    <img id="linkedin-logo" class="logo" src="../images/logos/linkedin.png" alt="linkedin image" />
-                    <p class="logoheading">ethan-vletter</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- mail -->
-        <div class="logo-block hidden">
-            <a href="mailto:ethan.vletter@gmail.com" target="_blank">
-                <div class="logo-block-inner">
-                    <p class="logoheading">Mail</p>
-                    <img id="google-logo" class="logo" src="../images/logos/google.png" alt="google image" />
-                    <p class="logoheading">ethan.vletter@gmail.com</p>
-                </div>
-            </a>
-        </div>
+      </a>
     </div>
 
-    <!-- <hr class="horizontal-line hidden" /> -->
+    <!-- mail -->
+    <div class="logo-block hidden">
+      <a href="mailto:ethan.vletter@gmail.com" target="_blank">
+        <div class="logo-block-inner">
+          <p class="logoheading">Mail</p>
+          <img
+            id="google-logo"
+            class="logo"
+            src="../images/logos/google.png"
+            alt="google image"
+          />
+          <p class="logoheading">ethan.vletter@gmail.com</p>
+        </div>
+      </a>
+    </div>
+  </div>
 
-    <footer>
-        <p>© Ethan Vletter | updated January 2025</p>
-    </footer>
+  <!-- <hr class="horizontal-line hidden" /> -->
+
+  <footer>
+    <p>© Ethan Vletter | updated January 2025</p>
+  </footer>
 </html>
